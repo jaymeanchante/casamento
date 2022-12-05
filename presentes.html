@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+  <script src="./js/copy.js"></script>
+
   <center>
     <header>
       <a href="./infos.html" class="button">Infos</a>
@@ -15,41 +18,73 @@
   </center>
   <div class="container">
     <div class="row">
+
       <div class="col-sm-6">
         <img src="./img/presentes/presente_50.jpg" alt="Chocolates belgas"/>
         <p style="text-align: center;">Chocolates</p>
         <p style="text-align: center;">R$ 50,00</p>
+        <center><label for="modal-control" class="button">Presentear</label></center>
+        <input type="checkbox" id="modal-control" class="modal">
+        <div>
+          <div class="card">
+            <label for="modal-control" class="modal-close" ></label>
+            <h3 class="section" style="text-align: center;">Pagar com Pix</h3>
+            <p id="pix50" style="width: 50%; overflow: hidden; text-overflow: ellipsis;">00020126650014br.gov.bcb.pix01362b3fd964-38ab-42ff-867c-4e0b43b35ba50203Pix520400005303986540550.005802BR5921JEZABEL NEUBAUER KATZ6012PORTO ALEGRE62140510Chocolates6304BC09</p>
+            <button type="button" onclick="copyEvent('pix50')">Copiar "Pix copia e cola"</button>
+            <p class="section" style="text-align: center;">Ou se preferir utilize o QR abaixo:</p>
+            <img src="./img/presentes/qr_50.jpg" alt="Pix 50 reais"/>
+          </div>
+        </div>
 
       </div>
       <div class="col-sm-6">
         <img src="./img/presentes/presente_100.jpg" alt="Fritas e cerveja"/>
         <p style="text-align: center;">Combo belga</p>
         <p style="text-align: center;">R$ 100,00</p>
+        <center><label for="modal-control" class="button">Presentear</label></center>
+        <input type="checkbox" id="modal-control" class="modal">
+        <div>
+          <div class="card">
+            <label for="modal-control" class="modal-close" ></label>
+            <h3 class="section" style="text-align: center;">Pagar com Pix</h3>
+            <p id="pix100" style="width: 50%; overflow: hidden; text-overflow: ellipsis;">00020126650014br.gov.bcb.pix01362b3fd964-38ab-42ff-867c-4e0b43b35ba50203Pix5204000053039865406100.005802BR5921JEZABEL NEUBAUER KATZ6012PORTO ALEGRE62140510Combobelga6304EB3F</p>
+            <button type="button" onclick="copyEvent('pix100')">Copiar "Pix copia e cola"</button>
+            <p class="section" style="text-align: center;">Ou se preferir utilize o QR abaixo:</p>
+            <img src="./img/presentes/qr_100.jpg" alt="Pix 100 reais"/>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="row">
+
       <div class="col-sm-6">
         <img src="./img/presentes/presente_250.jpg" alt="Museu e waffles"/>
         <p style="text-align: center;">Waffles no museu</p>
         <p style="text-align: center;">R$ 250,00</p>
-      </div>
+
       <div class="col-sm-6">
         <img src="./img/presentes/presente_500.jpg" alt="Paris"/>
         <p style="text-align: center;">Ida à Bruges</p>
         <p style="text-align: center;">R$ 500,00</p>
       </div>
+
     </div>
+
     <div class="row">
+      
       <div class="col-sm-6">
         <img src="./img/presentes/presente_1000.jpg" alt="Paris"/>
         <p style="text-align: center;">Ida à Paris</p>
         <p style="text-align: center;">R$ 1.000,00</p>
       </div>
+      
       <div class="col-sm-6 col-md-6 col-lg-6">
         <img src="./img/presentes/presente_livre.jpg" alt="Presente livre"/>
         <p style="text-align: center;">Presente de livre escolha</p>
         <p style="text-align: center;">sem valor definido</p>
       </div>
+
     </div>
   </div>
 </body>
