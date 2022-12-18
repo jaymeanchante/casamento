@@ -36,8 +36,16 @@ function copyTextToClipboard(text) {
   });
 };
 
-function copyEvent(id) {
-    var str = document.getElementById(id);
-    var pix = str.innerHTML;
-    copyTextToClipboard(pix);
+function copyEvent(id) {  
+  // copy text
+  var str = document.getElementById(id);
+  var pix = str.innerHTML;
+  copyTextToClipboard(pix);
+  // update toast
+  var toast = document.getElementById('toast-'+id);
+  toast.removeAttribute("hidden");
+  function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+  delay(1000).then(() => toast.setAttribute("hidden", true));
 };
