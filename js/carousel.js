@@ -4,7 +4,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
       rewind: true,
       pagination: false,
       cover: true,
-      heightRatio: 0.75,
+      heightRatio: 0.9,
       arrows: false,
       autoplay: true,
       interval: 3000
