@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
   <title>Jayme 💖 Jeza</title>
+  <link rel="stylesheet" type="text/css" href="./css/splide.min.css"/>
   <link rel="stylesheet" type="text/css" href="./css/audio.css"/>
   <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,8 @@
 <body>
   
   <script src="./js/clock.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="./js/carousel.js"></script>
 
   <center>
     <header>
@@ -24,40 +27,42 @@
     </audio>
   </div>
 
-  <br>
+  <center>
+    <br>
+    <p>Nos conhecemos no colégio e ficamos amigos no movimento juvenil. Então, um dia percebemos que era amor 😍</p>
+    <p>Desde que estamos juntos já vivemos muitos momentos especiais, aqui separamos alguns deles 🫶</p>
+    <br>
+  </center>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-1 col-md-2 col-lg-3"></div>
-      <div class="col-sm-10 col-md-8 col-lg-6"><img src="./img/fotos/foto10.jpeg" alt="Foto 10"/></div>
-      <div class="col-sm-1 col-md-2 col-lg-4"></div>
+  <center>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <section id="image-carousel" class="splide" aria-label="Carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./img/fotos/foto1.jpeg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="./img/fotos/foto2.jpeg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="./img/fotos/foto3.jpeg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="./img/fotos/foto4.jpeg" alt="">
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
-  </div>
+  </center>
 
   <!-- https://logwork.com/countdown-timer -->
   <script src="https://cdn.logwork.com/widget/countdown.js"></script>
   <a href="https://logwork.com/countdown-x13r" class="countdown-timer" data-style="columns" data-timezone="America/Sao_Paulo" data-language="pt" data-date="2023-01-20 17:00">Contagem regressiva</a>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12"><img src="./img/fotos/foto1.jpeg" alt="Foto 1"/></div>
-      <div class="col-sm-12"><img src="./img/fotos/foto2.jpeg" alt="Foto 2"/></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12"><img src="./img/fotos/foto3.jpeg" alt="Foto 3"/></div>
-      <div class="col-sm-12"><img src="./img/fotos/foto4.jpeg" alt="Foto 4"/></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12"><img src="./img/fotos/foto5.jpeg" alt="Foto 5"/></div>
-      <div class="col-sm-12"><img src="./img/fotos/foto6.jpeg" alt="Foto 6"/></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12"><img src="./img/fotos/foto7.jpeg" alt="Foto 7"/></div>
-      <div class="col-sm-12"><img src="./img/fotos/foto8.jpeg" alt="Foto 8"/></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12"><img src="./img/fotos/foto9.jpeg" alt="Foto 9"/></div>
-    </div>
-  </div>
 
 </body>
